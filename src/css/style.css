@@ -40,11 +40,18 @@ body {
 
 .cartao .minhas-informacoes .nome {
     font-size: 26px;
+    transition: all 0.5s;
 }
 
 .cartao .minhas-informacoes .cargo {
     font-size: 20px;
     color: #b8bbc5;
+    transition: all 0.5s;
+}
+
+.nome:hover, .cargo:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .cartao .conteudo {
@@ -62,6 +69,13 @@ body {
     padding: 10px 0;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.cartao .abas .aba:hover {    
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .cartao .abas img {
