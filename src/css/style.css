@@ -1,5 +1,13 @@
+:root{
+    --cor1: #0468BF;
+    --cor2: #034C8C;
+    --cor3: #012340;
+    --cor4: #011826;
+    --cor5: #52F2E2;
+}
+
 body {
-    background-image: url(../img/aurora-boreal.jpg);
+    background-image: url(../img/bappie-L_rNhnpWkD0-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -17,7 +25,7 @@ body {
 .cartao {
     background-color: #070d12;
     width: 370px;
-    border: 3px solid #014029;
+    border: 3px solid var(--cor2);
     border-radius: 10px;
     overflow: hidden;
     opacity: 0.9;
@@ -35,17 +43,18 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 60px;
-    border: 4px solid #02d08f;
+    border: 4px solid var(--cor5);
 }
 
 .cartao .minhas-informacoes .nome {
     font-size: 26px;
     transition: all 0.5s;
+    color: var(--cor1);
 }
 
 .cartao .minhas-informacoes .cargo {
     font-size: 20px;
-    color: #b8bbc5;
+    color: var(--cor2);
     transition: all 0.5s;
 }
 
@@ -114,14 +123,14 @@ body {
 
 .informacoes-abas .descricao{
     font-size: 1.2em;
-    max-height: 200px;
+    max-height: 300px;
     overflow-y: auto;
     padding-right: 15px;
     padding-left: 10px;
 }
 
 .informacoes-abas .descricao span {
-    color: #02d08f;
+    color: var(--cor5);
 }
 
 .redes-sociais {
@@ -129,7 +138,17 @@ body {
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    max-height: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 300px;
     overflow-y: auto;
 
 }
@@ -162,3 +181,30 @@ body {
     background-color: #545454;
 }
 
+.redes-sociais .twitter {
+    background-color: #00acee;
+}
+
+.redes-sociais .whatsapp {
+    background-color: #29D967;    
+}
+
+.projeto-itens {
+    color: #f3f3f3;
+    font-weight: bolder;
+    font-size: 1.2em;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.projeto-itens:hover {
+    -webkit-filter: drop-shadow(10px 6px 1.5px rgb(255, 255, 255));
+    filter: drop-shadow(10px 6px 1.5px rgb(255, 255, 255));
+}
+
+.projeto-itens a {    
+    color: #f3f3f3;
+    text-decoration: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
